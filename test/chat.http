@@ -1,0 +1,30 @@
+### Register
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "username": "testuser",
+  "password": "mypassword"
+}
+
+###
+
+### Login
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "testuser",
+  "password": "mypassword"
+}
+
+###
+
+### Chat (replace YOUR_TOKEN_HERE)
+POST http://localhost:5000/api/chat
+Authorization: Bearer YOUR_TOKEN_HERE
+Content-Type: application/json
+
+{
+  "prompt": "What is the capital of Japan?"
+}
